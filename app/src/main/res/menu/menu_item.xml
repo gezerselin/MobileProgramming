@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Anasayfa"
+        android:id="@+id/menu_item_anasayfa"/>
+    <item
+        android:title="Soru Ekleme"
+        android:id="@+id/menu_item_soruEkleme"/>
+    <item
+        android:title="Soru Lİsteleme"
+        android:id="@+id/menu_item_soruListeme"/>
+
+    <item
+        android:title="Sınav Oluşturma"
+        android:id="@+id/menu_item_sinavOlusturma"/>
+    <item
+        android:title="Sınav Ayarları"
+        android:id="@+id/menu_item_sinavAyarlari"/>
+    <item
+        android:title="Çıkış"
+        android:id="@+id/menu_item_cikis"/>
+
+</menu>

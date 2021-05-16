@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_Layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoruGuncellemeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextYanlisCevap1Update"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:hint="Yanlış cevabı girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextDogruCevapUpdate" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextYanlisCevap2Update"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:hint="Yanlış cevabı girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextYanlisCevap1Update" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextYanlisCevap3Update"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:hint="Yanlış cevabı girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextYanlisCevap2Update" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextYanlisCevap4Update"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:hint="Yanlış cevabı girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextYanlisCevap3Update" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextDogruCevapUpdate"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:hint="Doğru cevabı girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextSoruUpdate" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/main_toolbar" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextSoruUpdate"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:hint="Soruyu girin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <Button
+            android:id="@+id/buttonSoruGuncelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Soruyu Güncelle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextYanlisCevap4Update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout >
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
